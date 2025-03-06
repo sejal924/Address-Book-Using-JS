@@ -6,40 +6,48 @@ const addressBook = new AddressBook();
 try {
   const contact1 = new Contact(
     "Sejal",
-    "TChouhan",
+    "Chouhan",
     "Bhopal",
     "India",
     "In",
     "3245",
     "1234567890",
-    "helloworld@gmail.com"
+    "helloworld123@gmail.com"
   );
   console.log(addressBook.addContact(contact1));
 
   const contact2 = new Contact(
-    "Bulbul",
-    "Rai",
-    "Indore",
+    "Sejal",
+    "Chouh",
+    "Bhopal",
     "India",
     "In",
-    "1004500",
-    "4991188633",
-    "helloworldd@gmail.com"
+    "1000000",
+    "9198563558",
+    "chandalala@gmail.com"
   );
   console.log(addressBook.addContact(contact2));
-  console.log("All Contacts", addressBook.getAllContacts());
+  console.log("All Contacts Before editing", addressBook.getAllContacts());
+  console.log(
+    addressBook.editContact("Anush", {
+      address: "Mahim",
+      city: "Navi Mumbai",
+      phone: "9234567890",
+    })
+  );
+  console.log("All Contacts After editing", addressBook.getAllContacts());
 } catch (error) {
   console.error("Error:", error.message);
 }
 
 try {
   const invalidContact = new Contact(
-    "Man",
-    "pat",
+    "oja",
+    "joh",
     "abc",
-    "In",
+    "Ind",
     "I",
-    "767A5",
+    "100A01",
     "12345",
     "invalid-email"
   );

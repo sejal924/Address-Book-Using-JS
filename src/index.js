@@ -5,29 +5,41 @@ const addressBook = new AddressBook();
 
 try {
   const contact1 = new Contact(
-    "Sejal ",
-    "Chouhan",
+    "Sejal",
+    "TChouhan",
     "Bhopal",
     "India",
     "In",
     "3245",
     "1234567890",
-    "helloworld123@gmail.com"
+    "helloworld@gmail.com"
   );
   console.log(addressBook.addContact(contact1));
-  console.log(addressBook.getAllContacts());
+
+  const contact2 = new Contact(
+    "Bulbul",
+    "Rai",
+    "Indore",
+    "India",
+    "In",
+    "1004500",
+    "4991188633",
+    "helloworldd@gmail.com"
+  );
+  console.log(addressBook.addContact(contact2));
+  console.log("All Contacts", addressBook.getAllContacts());
 } catch (error) {
   console.error("Error:", error.message);
 }
 
 try {
   const invalidContact = new Contact(
-    "Bulbul",
-    "Rai",
-    "abctt",
+    "Man",
+    "pat",
+    "abc",
     "In",
     "I",
-    "100A01",
+    "767A5",
     "12345",
     "invalid-email"
   );

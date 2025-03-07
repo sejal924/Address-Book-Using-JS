@@ -12,13 +12,13 @@ try {
     "In",
     "3245",
     "1234567890",
-    "helloworld123@gmail.com"
+    "helloworld@gmail.com"
   );
   console.log(addressBook.addContact(contact1));
 
   const contact2 = new Contact(
-    "Sejal",
-    "Chouh",
+    "Riya",
+    "Verma",
     "Bhopal",
     "India",
     "In",
@@ -29,21 +29,23 @@ try {
   console.log(addressBook.addContact(contact2));
   console.log("All Contacts Before editing", addressBook.getAllContacts());
   console.log(
-    addressBook.editContact("Anush", {
-      address: "Mahim",
-      city: "Navi Mumbai",
+    addressBook.editContact("Riya", {
+      address: "Pipariya",
+      city: "New York",
       phone: "9234567890",
     })
   );
   console.log("All Contacts After editing", addressBook.getAllContacts());
+  console.log(addressBook.deleteContact("Riya"));
+  console.log("All Contacts After Deleting:", addressBook.getAllContacts());
 } catch (error) {
   console.error("Error:", error.message);
 }
 
 try {
   const invalidContact = new Contact(
-    "oja",
-    "joh",
+    "Riya",
+    "ver",
     "abc",
     "Ind",
     "I",

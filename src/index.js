@@ -32,7 +32,7 @@ try {
   console.log(
     addressBook.editContact("Riya", {
       address: "Raura",
-      city: "New London",
+      city: "London",
       phone: "9284567890",
     })
   );
@@ -55,6 +55,8 @@ try {
 
   console.log("Contacts in India:");
   console.log(addressBook.searchByCityOrState("Bhopal"));
+  console.log("Viewing Persons by City or State:");
+  console.log(addressBook.viewPersonsByCityOrState());
 } catch (error) {
   console.error("Error:", error.message);
 }
@@ -68,7 +70,7 @@ try {
     "I",
     "109A01",
     "123445",
-    "invalid-email"
+    "Invalid-email"
   );
   console.log(addressBook.addContact(invalidContact));
 } catch (error) {

@@ -9,9 +9,9 @@ try {
     "Chouhan",
     "Bhopal",
     "India",
-    "In",
-    "3245",
-    "1234567890",
+    "Madhya",
+    "324567",
+    "9996667778",
     "helloworld@gmail.com"
   );
   console.log(addressBook.addContact(contact1));
@@ -21,9 +21,9 @@ try {
     "Verma",
     "Bhopal",
     "India",
-    "In",
-    "1000000",
-    "9198563558",
+    "Madhya",
+    "100000",
+    "6666699999",
     "chandalala@gmail.com"
   );
   console.log(addressBook.addContact(contact2));
